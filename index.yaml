@@ -3,12 +3,12 @@ entries:
   currency-app:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-04-18T03:53:10.574656496Z"
+    created: "2024-04-18T04:19:16.155646455Z"
     description: A Helm chart for currency microservice
     digest: d53b464dce3f029e16a83e98cc1f6ca3a1ed04d1765ae2631086b9540ec77b28
     name: currency-app
     type: application
     urls:
-    - https://github.com/koheinhtetaung/helm-lab102/main/currency-app-0.1.0.tgz
+    - https://github.com/koheinhtetaung/helm-lab102/currency-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-18T03:53:10.572829267Z"
+generated: "2024-04-18T04:19:16.152743039Z"
