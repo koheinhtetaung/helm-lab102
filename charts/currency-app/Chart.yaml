@@ -1,0 +1,11 @@
+apiVersion: v2 # API version of helm
+name: currency-app # name of the chart
+description: A Helm chart for currency microservice
+type: application
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+version: 0.1.0
+ 
+appVersion: "0.1.0" # the version number of the currency-app. It is recommended to use it with quotes.
+
+# Reference https://helm.sh/docs/topics/charts/

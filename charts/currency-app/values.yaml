@@ -1,0 +1,8 @@
+deployname: currency-app
+replicas: 4
+containername: currency-container
+port: 8080
+currency: USD, SGD
+svcport: 80
+labels:
+  app: app-tier

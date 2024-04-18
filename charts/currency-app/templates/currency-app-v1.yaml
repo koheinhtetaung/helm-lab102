@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployname }}
+  labels:
+    {{- template "deploy.labels" }}
+    tier: {{ .Values.labels.app }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector: # -required-
+    matchLabels:
+      app: {{ .Values.deployname }}
+  template: # -required-
+    metadata:
+      labels:
+        app: {{ .Values.deployname }}
+    spec:
+      containers:
+      - name: {{ .Values.containername }}
+        image: hashicorp/http-echo:0.2.3
+        ports:
+        - containerPort: {{ .Values.port }}
+        args:
+          - "-text=feature available {{ .Values.currency}}"
+          - -listen=:{{ .Values.port }}
